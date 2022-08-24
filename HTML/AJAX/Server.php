@@ -161,14 +161,14 @@ class HTML_AJAX_Server
      * @access protected
      */
     var $_initLookup = array();
-    
+
 
     /**
      * Constructor creates the HTML_AJAX instance
      *
      * @param string $serverUrl (Optional) the url the client should be making a request too
      */
-    function HTML_AJAX_Server($serverUrl = false) 
+    function __construct($serverUrl = false)
     {
         $this->ajax = new HTML_AJAX();
 
