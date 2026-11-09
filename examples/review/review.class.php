@@ -2,7 +2,7 @@
 class Review {
 
 	// constructor won't be exported
-	function Review() {
+	function __construct() {
 		if (!isset($_SESSION['reviews'])) {
 			$_SESSION['reviews'] = array();	
 		}

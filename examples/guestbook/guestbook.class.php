@@ -19,7 +19,7 @@ require_once 'HTML/AJAX/Action.php';
 class guestbook {
 
 	// constructor won't be exported
-	function guestbook() {
+	function __construct() {
 		if (!isset($_SESSION['entries'])) {
 			$_SESSION['entries'] = array();
 		}

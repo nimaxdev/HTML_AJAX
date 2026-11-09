@@ -36,7 +36,7 @@ class HTML_AJAX_Serializer_JSON
     
     // }}}
     // {{{ constructor
-    function HTML_AJAX_Serializer_JSON($use_loose_type = true) 
+    function __construct($use_loose_type = true) 
     {
         $this->loose_type = (bool) $use_loose_type;
         $this->_jsonext = $this->_detect();

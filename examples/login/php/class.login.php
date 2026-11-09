@@ -26,7 +26,7 @@
 		/**
 		 * PHP5 requires a constructor
 		 */
-		function login() {
+		function __construct() {
 		}
 
 		/**

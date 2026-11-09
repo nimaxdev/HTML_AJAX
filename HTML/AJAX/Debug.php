@@ -86,7 +86,7 @@ class HTML_AJAX_Debug {
      * @param string $errCode    The error Code.
      * @param string $errFile    The file where error occured.
      */
-    function HTML_AJAX_Debug($errMsg, $errLine, $errCode, $errFile)
+    function __construct($errMsg, $errLine, $errCode, $errFile)
     {
         $this->errorMsg    = $errMsg;
         $this->errorLine   = $errLine;

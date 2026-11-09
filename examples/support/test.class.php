@@ -12,7 +12,7 @@
  * @link       http://pear.php.net/package/HTML_AJAX
  */
 class test {
-	function test() {
+	function __construct() {
 	}
 	function _private() {
 	}

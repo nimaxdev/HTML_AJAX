@@ -15,9 +15,9 @@ require_once 'HTML/AJAX.php';
 
 class error_test
 {
-    function error_test()
+    function __construct()
     {
-        $ajax =& new HTML_AJAX;
+        $ajax = new HTML_AJAX;
         $ajax->debugEnabled = true;
         $ajax->debugSession = true;
         set_error_handler(array(&$ajax, '_errorHandler'));
@@ -25,7 +25,7 @@ class error_test
     }
 }
 
-$t =& new error_test;
+$t = new error_test;
 print_r($t);
 
 ?>

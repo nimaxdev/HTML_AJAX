@@ -24,7 +24,7 @@ require_once 'HTML/AJAX/Server.php';
 $server = new HTML_AJAX_Server();
 
 // register an instance of the class were registering
-$test =& new test();
+$test = new test();
 $server->registerClass($test);
 $server->ajax->packJavaScript = true;
 
